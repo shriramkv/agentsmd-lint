@@ -12,7 +12,7 @@
 
 `AGENTS.md` is the emerging open standard for telling coding agents how to work in your repo : build commands, conventions, test instructions, guardrails. It is now stewarded by the **Agentic AI Foundation (AAIF)** under the Linux Foundation, and read by 30+ tools including Codex, Claude Code, Cursor, Copilot, Gemini CLI, Aider, and Zed.
 
-But there is a catch. The spec has **no required fields by design**, and recent research on 138 real repositories ([Gloaguen et al., 2026](https://asdlc.io/practices/agents-md-spec/)) found that **auto-generated `AGENTS.md` files actually *reduced* agent success rates and inflated cost by ~23%** — mainly by duplicating what the repo already makes obvious, and by giving vague instructions the agent follows literally.
+But there is a catch. The spec has **no required fields by design**, and recent research on 138 real repositories ([Gloaguen et al., 2026](https://asdlc.io/practices/agents-md-spec/)) found that **auto-generated `AGENTS.md` files actually *reduced* agent success rates and inflated cost by ~23%** - mainly by duplicating what the repo already makes obvious, and by giving vague instructions the agent follows literally.
 
 So the problem isn't *schema compliance*. It's **signal density**. `agentsmd-lint` is built around that finding: it doesn't force a rigid structure, it flags the low-value content that makes agents slower and more expensive, and nudges you toward the high-signal sections real repositories converge on.
 
