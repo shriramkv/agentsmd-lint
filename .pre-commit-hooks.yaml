@@ -1,0 +1,7 @@
+- id: agentsmd-lint
+  name: agentsmd-lint
+  description: Lint AGENTS.md files for signal density.
+  entry: agentsmd-lint lint
+  language: python
+  files: (^|/)AGENTS\.md$
+  pass_filenames: true
